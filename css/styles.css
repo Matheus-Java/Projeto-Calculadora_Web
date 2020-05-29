@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Usada para conta a distância de um elemento para outro pela box*/
+}
+
+body {
+  background-color: #407899;
+  height: 100px;
+}
+
+/* Estilo do centro */
+#central {
+  width: 417px;
+  height: 850px;
+  background-color: #000;
+  margin: 20px auto;
+  border-radius: 23px;
+}
+
+/* Estilo do titulo */
+.titulo {
+  width: auto;
+  height: 85px;
+  background-color:rgba(112, 112, 122, 0.7);
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+.titulo-txt {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 42pt;
+  text-align: center;
+}
+
+/* Estilo de exibir resultado */
+
+.exibir-result {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  margin-left: -40px;
+
+}
+.exibir-result-txt {
+  color: #FF9000;
+  font-size: 55pt;
+  font-weight: bold;
+  text-align: end;
+}
+
+
+/* Estilo da area de numeros */
+#area-number {
+  position: relative;
+  top: -32%;
+  width: 392px;
+  height: 465px;
+  background-color: #3A3737;
+  margin: 66% auto 0;
+  border-radius: 18px;
+  padding-top: 10px;
+}
+
+/* Estilo dos operadores */
+.operador {
+  background-color: #6C6F7D;
+  width: 70px;
+  height: 70px;
+  border-radius: 13px;
+  margin: 25px 0 0 15px;
+  box-shadow: 1px 1px #FFF;
+}
+.operadorMais {
+  background-color: #6C6F7D;
+  width: 70px;
+  height: 142px;
+  margin-left: 50%;
+  margin: -81% 0 0 75%;
+  border-radius: 11px;
+  box-shadow: 1px 1px #FFF;
+}
+.img-center {
+  margin-left: 14px;
+  margin-top: 7px;
+}
+.img1 {
+  margin-top: -2px;
+  margin-left: 22px;
+}
+.img2 {
+  margin-top: -8px;
+  margin-left: 18px;
+}
+.img3 {
+  margin-top: -38px;
+  margin-left: 20px;
+}
+.img4 {
+  margin-top: -6px;
+  margin-left: 10px;
+}
+.operador:hover, .operadorMais:hover {
+  background-color: rgb(183, 184, 187);
+  transition: 1s;
+  box-shadow: none;
+}
+.top1, .top2, .top3 {
+  margin-left: 30%;
+  margin-top: -70px;
+}
+.top1 {
+  margin-left: 28%;
+}
+.top2 {
+  margin-left: 51%;
+}
+.top3 {
+  margin-left: 75%;
+}
+
+/* Estilo dos numbers */
+.numbers {
+  width: 72px;
+  height: 72px;
+  background-color: #0F8B8D;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 15px
+}
+.numberTop1 {
+  margin: -72px 0 0 27%;
+  margin-top: -72px;
+  margin-left: 27%;
+}
+.numberTop2 {
+  margin: -72px 0 0 51%;
+}
+.numberTop3 {
+  margin: -72px 0 0 27%;
+}
+.numberTop4 {
+  margin: -72px 0 0 51%;
+}
+.numberTop5 {
+  margin: -72px 0 0 27%;
+}
+.numberTop6 {
+  margin: -72px 0 0 51%;
+}
+.number-txt {
+  text-align: center;
+  color: #FFF;
+  padding-top: 4px;
+  font-size: 30pt;
+  font-weight: bold;
+}
+.numbers:hover, .number-txt:hover {
+  background-color: aqua;
+  color: #000;
+  border-radius: 50%;
+  transition: 0.1s;
+}
+.numberZero {
+  width: 165px;
+  height: 60px;
+  background-color: #0F8B8D;
+  border-radius: 32px;
+  margin: 14px 0 0 15px;
+}
+.zero {
+  text-align: center;
+  color: #FFF;
+  font-size: 30pt;
+  font-weight: bold;
+}
+.zero:hover {
+  color: #000;
+}
+.numberZero:hover{
+  background-color: aqua;
+  border-radius: 32px;
+  transition: 0.1s;
+}
+
+.virgula {
+  margin: -66px 0 0 51%;
+}
+
+/* Estilo do calcular */
+.calcular {
+  width: 70px;
+  height: 163px;
+  background-color: #FF9000;
+  margin-left: 75%;
+  margin-top: 16px;
+  border-radius: 15px;
+  padding: 1px;
+}
+.calcular-txt {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 15pt;
+  margin-top: 60px;
+}
+.calcular:hover{
+  background-color: transparent;
+  opacity: 0.2;
+  transition: 0.2s;
+}
+
+/* Estilo Rodapé */
+#rodape {
+  background-color: #2F5267;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+}
+.rodape-txt p {
+  font-size: 22px;
+  font-weight: bold;
+  color: #FFF;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.rodape-txt a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.rodape-txt a:hover {
+  transition: 0.2s;
+  color: #FF9000;
+  text-decoration: underline;
+}
