@@ -10,69 +10,71 @@
 </head>
 
 <body>
-  <div id="central">
+  <form id="central" name="calculadora">
     <div class="titulo">
       <h1 class="titulo-txt">Calculadora</h1>
     </div>
-    <div class="exibir-result">
-      <p class="exibir-result-txt">2 + 2 </p>
-      <p class="exibir-result-txt">4 </p>
+    <div class="exibir">
+      <input type="text" name="calculo" class="exibir-calc-txt">
+    </div>
+    <div class="exibir">
+      <input type="text" name="result" class="exibir-result-txt">
     </div>
     <div id="area-number">
       <div class="operador">
-        <img src="./icons/clear.png" alt="limpar" class="img-center">
+        <img src="./icons/clear.png" alt="limpar" class="img-center" onclick="limparTela()">
       </div>
-      <div class="operador top1">
-        <img src="./icons/dividir.png" alt="dividir" class="img-center img1">
+      <div class="top1">
+        <input type="button" value="/" class="operador" onclick="exibir(value)">
       </div>
-      <div class="operador top1 top2">
-        <img src="./icons/mult.png" alt="multiplicar" class="img-center img2">
+      <div class="top2">
+       <input type="button" value="*" class="operador" onclick="exibir(value)">
       </div>
-      <div class="operador top1 top3">
-        <img src="./icons/sub.png" alt="subtrair" class="img-center img3">
+      <div class="top3">
+        <input type="button" value="-" class="operador" onclick="exibir(value)">
       </div>
-      <div class="numbers">
-        <p class="number-txt">7</p>
+      <label>
+        <input type="button" value="7" class="number-txt" onclick="exibir(value)">
+      </label>
+      <div class="numberTop1">
+        <input type="button" value="8" class="number-txt" onclick="exibir(value)">
       </div>
-      <div class="numbers numberTop1">
-        <p class="number-txt">8</p>
+      <div class="numberTop2">
+        <input type="button" value="9" class="number-txt" onclick="exibir(value)">
       </div>
-      <div class="numbers numberTop2">
-        <p class="number-txt">9</p>
+      <div>
+        <input type="button" value="4" class="number-txt" onclick="exibir(value)">
       </div>
-      <div class="numbers">
-        <p class="number-txt">4</p>
+      <div class="numberTop3">
+        <input type="button" value="5" class="number-txt" onclick="exibir(value)">
       </div>
-      <div class="numbers numberTop3">
-        <p class="number-txt">5</p>
+      <div class="numberTop4">
+        <input type="button" value="6" class="number-txt" onclick="exibir(value)">
       </div>
-      <div class="numbers numberTop4">
-        <p class="number-txt">6</p>
+      <div>
+        <input type="button" value="1" class="number-txt" onclick="exibir(value)">
       </div>
-      <div class="numbers">
-        <p class="number-txt">1</p>
+      <div class="numberTop5">
+        <input type="button" value="2" class="number-txt" onclick="exibir(value)">
       </div>
-      <div class="numbers numberTop5">
-        <p class="number-txt">2</p>
-      </div>
-      <div class="numbers numberTop6">
-        <p class="number-txt">3</p>
+      <div class="numberTop6">
+        <input type="button" value="3" class="number-txt" onclick="exibir(value)">
       </div>
       <div class="numberZero">
-        <p class="zero">0</p>
+        <input type="button" value="0" class="zero" onclick="exibir(value)">
       </div>
-      <div class="numbers virgula">
-        <p class="number-txt">,</p>
+      <div class="virgula">
+        <input type="button" value="," class="virgula-txt" onclick="exibir(value)">
       </div>
       <div class="operadorMais">
-        <img src="icons/Soma.png" alt="Soma" class="img-center img4">
+        <input type="button" value="+" class="operadorMais-txt" onclick="exibir(value)">
       </div>
       <div class="calcular">
-        <p class="calcular-txt">Calcular</p>
+        <p class="calcular-txt" onclick="calcular()">Calcular</p>
       </div>
 
     </div>
-  </div>
+  </form>
 
   <footer id="rodape">
     <div class="rodape-txt">

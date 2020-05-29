@@ -37,20 +37,27 @@ body {
 
 /* Estilo de exibir resultado */
 
-.exibir-result {
+.exibir {
   width: 100%;
   height: auto;
   margin-top: 25px;
   margin-left: -40px;
-
+  padding-top: 20px;
 }
-.exibir-result-txt {
+.exibir-calc-txt, .exibir-result-txt {
+  width: 96%;
+  margin-left: 48px;
+  background-color: transparent;
+  border: none;
+  outline: none;
   color: #FF9000;
   font-size: 55pt;
   font-weight: bold;
   text-align: end;
 }
-
+.exibir-result-txt {
+ padding-bottom: 25px;
+}
 
 /* Estilo da area de numeros */
 #area-number {
@@ -72,8 +79,20 @@ body {
   border-radius: 13px;
   margin: 25px 0 0 15px;
   box-shadow: 1px 1px #FFF;
+  cursor: pointer;
+  outline: none;
+  font-size: 26pt;
+  font-weight: bold;
+  color: #FFF;
 }
-.operadorMais {
+.operadorMais{
+ position: relative;
+ top: -68%;
+ left: 75%;
+ width: 0px;
+ height: 0px;
+}
+.operadorMais-txt {
   background-color: #6C6F7D;
   width: 70px;
   height: 142px;
@@ -81,6 +100,12 @@ body {
   margin: -81% 0 0 75%;
   border-radius: 11px;
   box-shadow: 1px 1px #FFF;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #FFF;
+  font-size: 30pt;
+  font-weight: bold;
 }
 .img-center {
   margin-left: 14px;
@@ -89,6 +114,7 @@ body {
 .img1 {
   margin-top: -2px;
   margin-left: 22px;
+  background-image: url(icons/dividir.png);
 }
 .img2 {
   margin-top: -8px;
@@ -102,91 +128,98 @@ body {
   margin-top: -6px;
   margin-left: 10px;
 }
-.operador:hover, .operadorMais:hover {
+.operador:hover, .operadorMais-txt:hover {
   background-color: rgb(183, 184, 187);
-  transition: 1s;
   box-shadow: none;
 }
 .top1, .top2, .top3 {
   margin-left: 30%;
-  margin-top: -70px;
+  margin-top: -95px;
 }
 .top1 {
-  margin-left: 28%;
+  margin-left: 24%;
 }
 .top2 {
-  margin-left: 51%;
+  margin-left: 48%;
 }
 .top3 {
-  margin-left: 75%;
+  margin-left: 71%;
 }
 
 /* Estilo dos numbers */
-.numbers {
+
+.numberTop1 {
+  margin: -84px 0 0 22%;
+}
+.numberTop2 {
+  margin: -84px 0 0 45%;
+}
+.numberTop3 {
+  margin: -84px 0 0 23%;
+}
+.numberTop4 {
+  margin: -84px 0 0 46%;
+}
+.numberTop5 {
+  margin: -84px 0 0 23%;
+}
+.numberTop6 {
+  margin: -84px 0 0 46%;
+}
+.number-txt {
   width: 72px;
   height: 72px;
   background-color: #0F8B8D;
+  border: none;
   border-radius: 50%;
-  margin-top: 15px;
-  margin-left: 15px
-}
-.numberTop1 {
-  margin: -72px 0 0 27%;
-  margin-top: -72px;
-  margin-left: 27%;
-}
-.numberTop2 {
-  margin: -72px 0 0 51%;
-}
-.numberTop3 {
-  margin: -72px 0 0 27%;
-}
-.numberTop4 {
-  margin: -72px 0 0 51%;
-}
-.numberTop5 {
-  margin: -72px 0 0 27%;
-}
-.numberTop6 {
-  margin: -72px 0 0 51%;
-}
-.number-txt {
-  text-align: center;
   color: #FFF;
-  padding-top: 4px;
   font-size: 30pt;
   font-weight: bold;
+  margin: 12px 0 0 25px;
+  outline: none;
+  cursor: pointer;
 }
-.numbers:hover, .number-txt:hover {
+.number-txt:hover {
   background-color: aqua;
   color: #000;
   border-radius: 50%;
   transition: 0.1s;
 }
 .numberZero {
+  position: relative;
+  left: -34%;
+}
+.zero {
   width: 165px;
   height: 60px;
   background-color: #0F8B8D;
   border-radius: 32px;
-  margin: 14px 0 0 15px;
-}
-.zero {
-  text-align: center;
   color: #FFF;
+  cursor: pointer;
+  outline: none;
+  border: none;
   font-size: 30pt;
   font-weight: bold;
+  margin: 10px 0 0 41%;
 }
-.zero:hover {
+.zero:hover, .virgula-txt:hover {
   color: #000;
-}
-.numberZero:hover{
   background-color: aqua;
-  border-radius: 32px;
-  transition: 0.1s;
 }
 
 .virgula {
   margin: -66px 0 0 51%;
+}
+.virgula-txt {
+  width: 72px;
+  height: 72px;
+  background-color: #0F8B8D;
+  border: none;
+  border-radius: 50%;
+  color: #FFF;
+  font-size: 20pt;
+  font-weight: bold;
+  outline: none;
 }
 
 /* Estilo do calcular */
@@ -195,7 +228,7 @@ body {
   height: 163px;
   background-color: #FF9000;
   margin-left: 75%;
-  margin-top: 16px;
+  margin-top: -39%;
   border-radius: 15px;
   padding: 1px;
 }
