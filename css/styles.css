@@ -1,12 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Dela Gothic One', cursive;
+  font-family: "Dela Gothic One", cursive;
 }
 
-body
-{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,15 +13,13 @@ body
   background-color: #111;
 }
 
-.calculator
-{
+.calculator {
   position: relative;
   display: grid;
   border-radius: 25px;
 }
 
-.calculator .value
-{
+.calculator .value {
   grid-column: span 4;
   height: 150px;
   text-align: right;
@@ -32,38 +29,33 @@ body
   font-size: 24px;
 }
 
-.calculator span
-{
+.calculator span {
   display: grid;
   width: 100px;
   height: 100px;
   color: #fff;
   background-color: #0c2835;
   place-items: center;
-  border: 1px solid rgba(0,0,0.1);
+  border: 1px solid rgba(0, 0, 0.1);
   font-size: 25px;
 }
 
-.calculator span:active
-{
+.calculator span:active {
   background-color: #e6f700;
   color: #111;
 }
 
-.calculator span.clear 
-{
+.calculator span.clear {
   grid-column: span 2;
   width: 200px;
   background-color: #ff3077;
 }
 
-.calculator span.plus
-{
+.calculator span.plus {
   grid-row: span 2;
   height: 200px;
 }
 
-.calculator span.equal
-{
+.calculator span.equal {
   background-color: #35ff03;
-} 
+}
