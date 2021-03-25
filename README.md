@@ -1,6 +1,6 @@
 # Calculadora Web
 
-Calculadora desenvolvida com **HTML**, **CSS** e **JavaScript**
+Calculadora desenvolvida com **HTML**, **CSS** e **JavaScript**.
 
 Veja Aqui:[Link](https://matheus-java.github.io/Calculadora-Web/)
 
