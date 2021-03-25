@@ -4,84 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
   <title>Calculadora</title>
 </head>
 
 <body>
-  <form id="central" name="calculadora">
-    <div class="titulo">
-      <h1 class="titulo-txt">Calculadora</h1>
-    </div>
-    <div class="exibir">
-      <input type="text" name="calculo" class="exibir-calc-txt">
-    </div>
-    <div class="exibir">
-      <input type="text" name="result" class="exibir-result-txt">
-    </div>
-    <div id="area-number">
-      <div class="operador">
-        <img src="./icons/clear.png" alt="limpar" class="img-center" onclick="limparTela()">
-      </div>
-      <div class="top1">
-        <input type="button" value="/" class="operador" onclick="exibir(value)">
-      </div>
-      <div class="top2">
-       <input type="button" value="*" class="operador" onclick="exibir(value)">
-      </div>
-      <div class="top3">
-        <input type="button" value="-" class="operador" onclick="exibir(value)">
-      </div>
-      <label>
-        <input type="button" value="7" class="number-txt" onclick="exibir(value)">
-      </label>
-      <div class="numberTop1">
-        <input type="button" value="8" class="number-txt" onclick="exibir(value)">
-      </div>
-      <div class="numberTop2">
-        <input type="button" value="9" class="number-txt" onclick="exibir(value)">
-      </div>
-      <div>
-        <input type="button" value="4" class="number-txt" onclick="exibir(value)">
-      </div>
-      <div class="numberTop3">
-        <input type="button" value="5" class="number-txt" onclick="exibir(value)">
-      </div>
-      <div class="numberTop4">
-        <input type="button" value="6" class="number-txt" onclick="exibir(value)">
-      </div>
-      <div>
-        <input type="button" value="1" class="number-txt" onclick="exibir(value)">
-      </div>
-      <div class="numberTop5">
-        <input type="button" value="2" class="number-txt" onclick="exibir(value)">
-      </div>
-      <div class="numberTop6">
-        <input type="button" value="3" class="number-txt" onclick="exibir(value)">
-      </div>
-      <div class="numberZero">
-        <input type="button" value="0" class="zero" onclick="exibir(value)">
-      </div>
-      <div class="virgula">
-        <input type="button" value="." class="virgula-txt" onclick="exibir(value)">
-      </div>
-      <div class="operadorMais">
-        <input type="button" value="+" class="operadorMais-txt" onclick="exibir(value)">
-      </div>
-      <div class="calcular">
-        <p class="calcular-txt" onclick="calcular()">Calcular</p>
-      </div>
-
-    </div>
+  <form class="calculator" name="calc">
+    <input class="value" type="text" name="txt" readonly=""> 
+    <span class="num clear" onclick="document.calc.txt.value = '' ">c</span>
+    <span class="num" onclick="document.calc.txt.value += '/' ">/</span>
+    <span class="num" onclick="document.calc.txt.value += '*' ">*</span>
+    <span class="num" onclick="document.calc.txt.value += '7' ">7</span>
+    <span class="num" onclick="document.calc.txt.value += '8' ">8</span>
+    <span class="num" onclick="document.calc.txt.value += '9' ">9</span>
+    <span class="num" onclick="document.calc.txt.value += '-' ">-</span>
+    <span class="num" onclick="document.calc.txt.value += '4' ">4</span>
+    <span class="num" onclick="document.calc.txt.value += '5' ">5</span>
+    <span class="num" onclick="document.calc.txt.value += '6' ">6</span>
+    <span class="num plus" onclick="document.calc.txt.value += '+' ">+</span>
+    <span class="num" onclick="document.calc.txt.value += '3' ">3</span>
+    <span class="num" onclick="document.calc.txt.value += '2' ">2</span>
+    <span class="num" onclick="document.calc.txt.value += '1' ">1</span>
+    <span class="num" onclick="document.calc.txt.value += '0' ">0</span>
+    <span class="num" onclick="document.calc.txt.value += '00' ">00</span>
+    <span class="num" onclick="document.calc.txt.value += '.' ">.</span>
+    <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value) ">=</span>
   </form>
-
-  <footer id="rodape">
-    <div class="rodape-txt">
-      <p>Copyright &COPY; 2020 | Desevolvido por <a href="https://www.facebook.com/Matheus.Stack001" target="_blank"> Matheus Stack</a></p>
-    </div>
-  </footer>
-  <script src="js/scripts.js"></script>
 </body>
 
 </html>
